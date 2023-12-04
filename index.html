@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="Site Teste">
+    <meta name="keywords" content="palavras chaves não definidas ainda">
+    <meta name="author" content="Daniel Floriano">
+    <link rel="stylesheet" href="/styles/nav_bar.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>General</title>
+</head>
+<body>
+    <header>
+        <section class="nav_bar"> <!--Barra principal-->
+
+            <div class="left_bar"> <!--Parte esquerda da Barra-->
+
+                <button class="btn_navigation"> <!--Botão de navegação para telas menores-->
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+
+                <div class="logo">
+                    <a href="#"><img src="../img/icon/logo7.jpg"></a>
+                </div>
+
+                <nav>
+                    <ul class="ul_principal">
+                        <li class="li_principal btn_navegar"><a href="#">Navegar</a>
+                            <ul class="ul_navegar">
+                                <li class="li_navegar"><a href="#">Popular</a></li>
+                                <li class="li_navegar"><a href="#">Novos</a></li>
+                                <li class="li_navegar"><a href="#">A - Z</a></li>
+                                <li class="li_navegar"><a href="#">Gênero</a></li>
+                            </ul>
+                        </li>
+                        <li class="li_principal btn_navegar"><a href="#">Favoritos</a></li>
+                        <li class="li_principal btn_navegar"><a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <form class="form_search">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </form>
+
+            <div class="profile">
+                <a href="#"><img src="../img/perfil/perfil1.png"></a>
+                <button class="btn_profile_settings">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <section class="banner_principal">
+            <div class="container_banner">
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime1.jpg"></a>
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime2.jpg"></a>
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime3.jpg"></a>
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime4.jpg"></a>
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime5.jpg"></a>
+                <a href="#"> <img class="banner_image" src="../assets/banner_anime/banner_anime6.jpg"></a>
+                <div class="banner_buttons">
+                    <button class="image_button active" data-index="0"></button>
+                    <button class="image_button active" data-index="1"></button>
+                    <button class="image_button active" data-index="2"></button>
+                    <button class="image_button active" data-index="3"></button>
+                    <button class="image_button active" data-index="4"></button>
+                    <button class="image_button active" data-index="5"></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo_principal">
+            <h1>Catálogo</h1>
+        </div>
+
+        <div class="titulo_assistidos">
+            <h2>Mais Assistidos</h2>
+            <button class="btn_ver_todos">Ver Todos</button>
+            <button class="btn_ver_proximo" onclick="deslocarParaDireita()">></button>
+            <!--Ainda ireia configurar esses botões-->
+        </div>
+
+        <section class="align_assistidos">
+            <div id="container_mais_assistidos" class="container_mais_assistidos">
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido1.jpg">
+                        <h3>One Piece</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido2.jpg">
+                        <h3>Boku Dake Ga Inai Machi</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido3.jpg">
+                        <h3>Jujustu Kaisen</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido4.jpg">
+                        <h3>Fullmetal Alchemist</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido5.jpg">
+                        <h3>Steins;Gate</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido6.jpg">
+                        <h3>Gintama</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido7.jpg">
+                        <h3>Shingeki no Kyojin</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido2.jpg">
+                        <h3>Hunter x Hunter</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido1.jpg">
+                        <h3>Kaguya-sama wa Kokurasetai</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido2.jpg">
+                        <h3>Code Geass</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido1.jpg">
+                        <h3>Naruto Shippuden</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido6.jpg">
+                        <h3>Violet Evergarden</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido3.jpg">
+                        <h3>Shigatsu Wa Kimi No Uso</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido4.jpg">
+                        <h3>Bungou Stray Dogs</h3>
+                    </a>
+                </div>
+
+                <div class="mais_assistidos">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/mais_assistidos/assistido5.jpg">
+                        <h3>Hajime no Ippo</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <div style="margin-bottom: 20px; margin-top: 80px;" id="lancamentos" class="titulo_assistidos">
+            <!--repeti grotescamente-->
+            <h2>Lançamentos</h2>
+        </div>
+
+        <section class="align_container_lancamento">
+            <div class="container_lancamento">
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento1.jpg">
+                        <h3>Fullmetal Alchemist</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento2.jpg">
+                        <h3>Steins;Gate</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento3.jpg">
+                        <h3>Gintama</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento4.jpg">
+                        <h3>Shingeki no Kyojin</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento5.jpg">
+                        <h3>Bleach</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento6.jpg">
+                        <h3>Hunter x Hunter</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento7.jpg">
+                        <h3>Kaguya-sama wa Kokurasetai</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento8.jpg">
+                        <h3>Code Geass</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento9.jpg">
+                        <h3>Jujutsu Kaisen</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento10.jpg">
+                        <h3>Violet Evergarden</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento11.jpg">
+                        <h3>Shigatsu Wa Kimi No Uso</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento12.jpg">
+                        <h3>Death Note</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento13.jpg">
+                        <h3>One Punch Man</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento14.jpg">
+                        <h3>Sword Art Online</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento15.jpg">
+                        <h3>No Game No Life</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento1.jpg">
+                        <h3>Toradora</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento2.jpg">
+                        <h3>Re:Zero kara Hajimeru Isekai Seikatsu</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento3.jpg">
+                        <h3>Noragami</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento4.jpg">
+                        <h3>Akame ga Kill</h3>
+                    </a>
+                </div>
+
+                <div class="lancamento">
+                    <a href="javascript:void(0);">
+                        <img src="/assets/lancamentos/lancamento5.jpg">
+                        <h3>Angel Beats</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="banner_secundario">
+            <a id="instagram" href="https://www.instagram.com/" target="_blank"><img
+                    src="/img/redes/instagram_purple.png"></a>
+            <a id="twitter" href="https://twitter.com/" target="_blank"><img src="/img/redes/twitter_purple.png"></a>
+            <a id="youtube" href="https://www.youtube.com/" target="_blank"><img
+                    src="/img/redes/youtube_purple.png"></a>
+
+            <h2>O Melhor Site de Anime que Não Existe!</h2>
+
+            <a id="discord" href="https://discord.com/" target="_blank"><img src="/img/redes/discord_purple.png"></a>
+            <a id="telegram" href="https://web.telegram.org/" target="_blank"><img
+                    src="/img/redes/telegram_purple.png"></a>
+            <a id="facebook" href="https://www.facebook.com/" target="_blank"><img
+                    src="/img/redes/facebook_purple.png"></a>
+        </div>
+
+        <section class="align_todos_genero">
+            <div class="container_todos">
+
+                <!--Separando a imagem e título com divs, diferente do que fiz mais em cima-->
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento1.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Jujustu Kaisen</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento2.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Tokyo Ghoul</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento3.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Haikyuu</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento4.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Kuroko No Basket</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento5.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Shigatsu Wa Kimi No Uso</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento6.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Boku Dake Ga Inai Machi</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento7.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Devilman Crybaby</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento8.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Mob Psycho</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento9.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Shingeki No Kyojin</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento10.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Kimetsu No Yaiba</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento11.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Naruto Shippuden</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento12.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Bleach</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento13.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>One Piece</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento14.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Anohana</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento15.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Plastic Memories</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento1.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Black Clover</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento2.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Code Geass</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento3.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Saint Seiya</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento4.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Hunter x Hunter</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento5.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Sousou no Frieren</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento6.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Tate No Yuusha</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento7.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Koe No Katachi</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento8.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Bocchi the Rock</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento9.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Vinland Saga</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento10.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Bungou Stray Dogs</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento11.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Hajime no Ippo</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento12.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Made in Abyss</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento13.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Tengen Toppa Gurren Lagann sasasa</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="todos">
+                    <a href="javascript:void(0);">
+                        <div class="todos_img">
+                            <img src="/assets/lancamentos/lancamento14.jpg">
+                        </div>
+                        <div class="todos_titulo">
+                            <h3>Kimi no Suizou wo Tabetai</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="container_genero">
+                <ul>
+                    <li class="no-hover"><img src="/img/icon/logo7.png   "> Gêneros</li>
+                    <li><a href="javascript:void(0);">Ação</a></li>
+                    <li><a href="javascript:void(0);">Aventura</a></li>
+                    <li><a href="javascript:void(0);">Comédia</a></li>
+                    <li><a href="javascript:void(0);">Drama</a></li>
+                    <li><a href="javascript:void(0);">Fantasia</a></li>
+                    <li><a href="javascript:void(0);">Ficção Científica</a></li>
+                    <li><a href="javascript:void(0);">Magia</a></li>
+                    <li><a href="javascript:void(0);">Mistério</a></li>
+                    <li><a href="javascript:void(0);">Romance</a></li>
+                    <li><a href="javascript:void(0);">Shounen</a></li>
+                    <li><a href="javascript:void(0);">Sobrenatural</a></li>
+                    <li><a href="javascript:void(0);">Super Poderes</a></li>
+                    <li><a href="javascript:void(0);">Terror</a></li>
+                    <li><a href="javascript:void(0);">Game</a></li>
+                    <li><a href="javascript:void(0);">Iyashikei</a></li>
+                    <li><a href="javascript:void(0);">Mecha</a></li>
+                    <li><a href="javascript:void(0);">Musical</a></li>
+                    <li><a href="javascript:void(0);">Psychological</a></li>
+                    <li><a href="javascript:void(0);">Sports</a></li>
+                </ul>
+
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="container_footer">
+                <h2>ÁREA FOOTER</h2>
+            </div>
+
+        </footer>
+
+    </main>
+
+
+</body>
+
+<script src="../scripts/animation_banner.js"></script>
+<script src="../scripts/btn_deslocar.js"></script>
+
+</html>

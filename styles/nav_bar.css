@@ -1,0 +1,203 @@
+
+
+section.nav_bar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #18122B;
+    /* cor do nav_bar inteira, tem que estar de acordo com a li_principal*/
+    align-items: center;
+
+}
+
+div.left_bar {
+    /*bnt_navigation , logo e ul_navegar*/
+    display: flex;
+    align-items: center;
+    /* section.nav_bar  */
+    font-size: 25px;
+}
+
+div.left_bar button.btn_navigation {
+    /*Botão de navegação para telas menores*/
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    display: none;
+    /* poderia usar visility: hidden; caso eu quisesse manter o espaço */
+}
+
+div.left_bar button.btn_navigation span {
+    font-size: 65px;
+    /*Tamanho do span menu o button se adapta ao tamanho do span*/
+}
+
+div.logo a {
+    width: 60px;
+}
+
+div.logo a img {
+    /*logo principal*/
+    width: 60px;
+    opacity: 80%;
+    vertical-align: middle;
+    border-radius: 50px;
+    margin: 0px 5px;
+}
+
+div.logo a img:hover {
+    opacity: 100%;
+}
+
+ul.ul_principal {
+    display: flex;
+    /*não fica com espaço entre os botão*/
+
+}
+
+ul.ul_principal li.li_principal {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.ul_principal li.li_principal a {
+    display: block;
+    /*esse que deixa quadrado*/
+    background-color: #18122B;
+    /*cor do li_principal */
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Nova Square', sans-serif;
+    /* fonte da ul_principal e demais uls */
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 20px;
+    width: 160px;
+    /*Defina uma largura fixa*/
+    height: 100%;
+    /*Defina uma altura fixa*/
+
+}
+
+ul.ul_principal li.li_principal a:hover {
+    background-color: #393053;
+}
+
+ul.ul_navegar {
+    position: absolute;
+    display: none;
+    z-index: 60;
+}
+
+ul.ul_navegar li.li_navegar {
+    list-style: none;
+    /* tira bola da li_navegar já que n ta puxando do li_principal */
+}
+
+ul.ul_navegar li.li_navegar a {
+    /*editar texto do li_navegar */
+    text-align: center;
+}
+
+li.btn_navegar:hover ul.ul_navegar {
+    display: block;
+}
+
+form.form_search {
+    display: flex;
+    align-items: center;
+}
+
+form.form_search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    background-color: #dfdfdf;
+    /* cor do input */
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+form.form_search input::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 70%;
+    /*pseudo classe pra mudar o placeholder*/
+}
+
+form.form_search button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    width: 50px;
+
+}
+
+
+div.profile a img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+div.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 1rem;
+}
+
+div.profile button.btn_profile_settings {
+    background-color: transparent;
+    border: none;
+}
+
+div.profile button.btn_profile_settings span {
+    font-size: 40px;
+    /* Tamanho do span menu o button se adapta ao tamanho do span */
+    color: rgb(246, 235, 235);
+}
+
+@media (max-width: 768px) {
+
+    section.nav_bar {
+        justify-content: space-between;
+        /* encaixar melhor os itens */
+    }
+
+    .btn_navigation {
+        width: 50px;
+    }
+
+    form.form_search {
+        display: flex;
+        /* Transforma o form em um contêiner flex */
+    }
+
+    form.form_search input {
+        flex-grow: 1;
+        /* Faz com que o input ocupe o espaço restante */
+        min-width: 0;
+        /* Permite que o input encolha além do seu conteúdo */
+        width: 100%;
+        /* ajuda demais a adaptar o input pra telas menores */
+    }
+
+    ul.ul_principal {
+        /*removendo a ul_principal pra colocar dentro do btn_navigation*/
+        display: none; /* vou trabalhar isso quando for pro javascript */
+    }
+
+    div.left_bar button.btn_navigation {
+        display: block;
+    }
+
+    div.profile button {
+        /*remove o botão settings*/
+        display: none;
+    }
+}
